@@ -1,0 +1,20 @@
+
+main {
+    /* Alto del dispositivo */
+    min-height: 100vh;
+    font-size: 5rem;
+    padding: 10px;
+
+    /* para trabajar con grid al display se le da valor grid */
+    display: grid;
+
+    background-color: bisque;
+
+    /* colocar columnas a las grid */
+    /* Anchos de las columnas */
+    /* fr son fraciones y los divide parcialmente abajo quiere decir que tome 3 columans */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* filas */
+    grid-template-rows: 1fr 1fr;
+}
