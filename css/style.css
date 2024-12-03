@@ -1,7 +1,8 @@
 
-main {
+.main {
     /* Alto del dispositivo */
     min-height: 100vh;
+    
     font-size: 5rem;
     padding: 10px;
 
@@ -14,7 +15,59 @@ main {
     /* Anchos de las columnas */
     /* fr son fraciones y los divide parcialmente abajo quiere decir que tome 3 columans */
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 300px 200px 150px; */
 
     /* filas */
     grid-template-rows: 1fr 1fr;
+
+    grid-gap: 10px;
+}
+
+div {
+    background-color: violet;
+}
+
+#dos {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* toma el espacio dependiendo el elemento h q es como una varable y esas h van a tomar las tres columanas y si hay mas filas muestra el estilo de las filas */
+    grid-template-areas: 
+    "h h h"
+    "m m a"
+    "n n b"
+    "n n b"
+    "f f f"
+    ;
+    background-color: aquamarine;
+    height: 200px;
+}
+
+/* referencial cual es h */
+.grid-1 {
+    grid-area: h;
+}
+
+.grid-2 {
+    grid-area: m;
+}
+
+.grid-3 {
+    grid-area: a;
+}
+
+.grid-4 {
+    grid-area: n;
+}
+
+.grid-5 {
+    grid-area: b;
+}
+
+.grid-6 {
+    grid-area: f;
+}
+
+#dos div{
+    background-color: azure;
 }
