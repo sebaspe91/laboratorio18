@@ -1,1 +1,55 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+
+.principal {
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* toma el espacio dependiendo el elemento h q es como una varable y esas h van a tomar las tres columanas y si hay mas filas muestra el estilo de las filas */
+    grid-template-areas: 
+    "h h h h"
+    "m m m m"
+    "a a n b"
+    "f f f f"
+    ;
+    background-color: aquamarine;
+
+}
+
+/* referencial cual es h */
+.grid-1 {
+    height: 50px;
+    grid-area: h;
+    background-color: violet;
+}
+
+.grid-2 {
+    grid-area: m;
+    background-color: blueviolet;
+}
+
+.grid-3 {
+    grid-area: a;
+    background-color: blue;
+}
+
+.grid-4 {
+    /* height: 50px; */
+    grid-area: n;
+    background-color: saddlebrown;
+}
+
+.grid-5 {
+    /* height: 50px; */
+    grid-area: b;
+    background-color: salmon;
+}
+
+.grid-6 {
+    /* height: 50px; */
+    grid-area: f;
+    background-color: forestgreen;
+}
+
+
